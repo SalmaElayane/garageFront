@@ -1,0 +1,53 @@
+
+/* .getall{
+  background-color: crimson;
+  color: beige;
+  margin-left:80%;
+} */
+
+
+img {
+  width: 25px;
+  border-radius: 50px;
+  float: left;
+}
+
+.logout {
+  font-size: .7em;
+  font-family: 'Oswald', sans-serif;
+	position: relative;
+  right: -1px;
+  bottom: -4px;
+  overflow: hidden;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: opacity .45s;
+  -webkit-transition: opacity .35s;
+
+}
+
+.button {
+	text-decoration: none;
+	float: right;
+  padding: 12px;
+  margin-left: 660px;
+  color: white;
+  width: 50px;
+  background-color: black;
+  transition: width .35s;
+  -webkit-transition: width .35s;
+  overflow: hidden
+}
+
+a:hover {
+  width: 100px;
+}
+
+a:hover .logout{
+  opacity: .9;
+}
+
+a {
+  text-decoration: none;
+}
+

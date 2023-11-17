@@ -1,0 +1,47 @@
+<div class="container mt-4">
+  <div class="form-produit shadow-lg">
+    <div>
+      <h1>Un nouveau garage</h1>
+  </div>
+  <br>
+      <div class="container">
+          <form [formGroup]="ajouteGarage" class="pb-2 " autocomplete="on">
+
+              <div class="form-group row">
+                  <label for="designation" class="col-sm-2 col-form-label">Nom Garage :</label>
+                  <div class="col-sm-10">
+                      <input required id="designation" autofocus
+                      placeholder="Titre de produit"
+                      type="text" class="form-control" formControlName="nomGarage" >
+                      </div>
+              </div>
+<br>
+              <div class="form-group row">
+                <label for="designation" class="col-sm-2 col-form-label">Description garage :</label>
+                <div class="col-sm-10">
+                    <input required id="designation" autofocus formControlName="descriptions"
+                     placeholder="Description de formation" type="text" class="form-control" >
+                    </div>
+            </div>
+
+              <br>
+              <div class="form-group row">
+                <label for="designation" class="col-sm-2 col-form-label">Lieu :</label>
+                <div class="col-sm-10">
+                    <input required id="designation" autofocus formControlName="lieux"
+                    placeholder="Titre de produit" type="text" class="form-control" >
+                    </div>
+            </div>
+
+            <br>
+              <div class="form-group row">
+                  <label for="description" class="col-sm-2 col-form-label"> </label>
+                  <div class="col-sm-10">
+                      <button class="btn btn-primary" (click)="ajoutGarage()">Enregistrer Garage</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+      {{gara}}
+  </div>
+</div>

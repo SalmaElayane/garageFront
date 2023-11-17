@@ -1,0 +1,45 @@
+<br>
+<div class="container mt-4">
+  <div class="form-produit shadow-lg">
+    <div class="titre shadow-lg mt-4" class="style">
+    <h1>Modifier un garage</h1>
+    </div>
+    <br>
+      <div class="container">
+          <form [formGroup]="editGarage"  class="pb-2 " autocomplete="on">
+
+              <div class="form-group row">
+                  <label for="designation" class="col-sm-2 col-form-label">Nom de garage :</label>
+                  <div class="col-sm-10">
+                      <input required id="designation" autofocus  formControlName="nomGarage" placeholder="nom de garage" type="text" class="form-control" >
+                      </div>
+              </div>
+               <br>
+              <div class="form-group row">
+                <label for="designation" class="col-sm-2 col-form-label">Description garage :</label>
+                <div class="col-sm-10">
+                    <input required id="designation" autofocus  formControlName="descriptions" placeholder="Description de garage" type="text" class="form-control" >
+                    </div>
+            </div>
+
+              <br>
+              <div class="form-group row">
+                <label for="designation" class="col-sm-2 col-form-label">Lieu de garage :</label>
+                <div class="col-sm-10">
+                    <input required id="designation" autofocus  formControlName="lieux" placeholder="lieu de garage" type="text" class="form-control" >
+                    </div>
+            </div>
+
+
+              <br>
+
+              <div class="form-group row">
+                  <label for="description" class="col-sm-2 col-form-label"> </label>
+                  <div class="col-sm-10">
+                      <button (click)="updateGarage()" class="btn btn-primary" >Enregistrer un garage</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
